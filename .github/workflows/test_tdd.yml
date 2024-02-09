@@ -27,7 +27,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run:
+        run: |
           if curl -s -N 'https://github.com/uchecom/' | grep -q "I love Ruby too"; then
             echo "It worked!"; exit 0; else
             echo "It did not work"; exit 1
